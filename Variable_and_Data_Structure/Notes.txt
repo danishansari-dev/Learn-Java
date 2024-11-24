@@ -1,0 +1,12 @@
+How is our Code Running?
+
+Source Code (.Java) -> Compiler -> Byte Code(.class) -> JVM -> Native Code
+----------compilation------------|-------Execution-----------------------|
+
+JDK - Development tools
+JRE - Libraries (Java Runtime Environment)
+JVM - Java Virtual Machine
+
+
+JAVA:
+-Portable language
