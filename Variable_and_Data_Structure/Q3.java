@@ -16,8 +16,16 @@ public class Q3 {
         float gst = cost+cost*0.18f;
         System.out.println("Total cost = "+gst);
 
-        // Q5
-        // int $ = 4;
-        // System.out.println($);
+        /*
+        Q5: will it give error?
+        int $ = 4;
+        System.out.println($);
+        
+            No, the statement will not give any error.
+            NamesofvariablesarecalledidentifiersinJava. Identifierrulesays, identifierscanstartwith
+            any alphabet or underscore (“_”) or dollar (“$”).
+            According to the rule the given variable name is a valid identifier.
+        */
+
     }
 }
