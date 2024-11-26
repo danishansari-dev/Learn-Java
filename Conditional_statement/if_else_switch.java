@@ -1,6 +1,8 @@
+
 import java.util.Scanner;
 
 public class if_else_switch {
+
     public static void main(String[] args) {
         // int a = 17;
         Scanner sc = new Scanner(System.in);
@@ -12,7 +14,6 @@ public class if_else_switch {
         // } else {
         //     System.out.println("You can't drive");
         // }
-
         System.out.print("Enter button number: ");
         int button = sc.nextInt();
         // if(button ==1) {
@@ -25,14 +26,18 @@ public class if_else_switch {
         //     System.out.println("Invalid Button");
         // }        
 
-        switch(button) {
-            case 1: System.out.println("hello");
-            break;
-            case 2: System.out.println("Namaste");
-            break;
-            case 3: System.out.println("Bonjour");
-            break;
-            default: System.out.println("Invalid Button");
+        switch (button) {
+            case 1:
+                System.out.println("hello");
+                break;
+            case 2:
+                System.out.println("Namaste");
+                break;
+            case 3:
+                System.out.println("Bonjour");
+                break;
+            default:
+                System.out.println("Invalid Button");
         }
 
     }

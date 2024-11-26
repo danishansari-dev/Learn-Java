@@ -1,4 +1,6 @@
+
 public class Type_conversion {
+
     public static void main(String[] args) {
         int a = 25;
         long b = a;
@@ -7,5 +9,5 @@ public class Type_conversion {
         System.out.println(b);
 
     }
-    
+
 }

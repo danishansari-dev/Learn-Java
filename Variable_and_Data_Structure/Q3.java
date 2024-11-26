@@ -1,6 +1,8 @@
+
 import java.util.Scanner;
 
 public class Q3 {
+
     public static void main(String[] args) {
         /*
          * Enter cost of 3 items from the user (using float data type)- a pencil, a pen and
@@ -12,9 +14,9 @@ public class Q3 {
         float pencil = sc.nextFloat();
         float pen = sc.nextFloat();
         float eraser = sc.nextFloat();
-        float cost = (pencil+pen+eraser);
-        float gst = cost+cost*0.18f;
-        System.out.println("Total cost = "+gst);
+        float cost = (pencil + pen + eraser);
+        float gst = cost + cost * 0.18f;
+        System.out.println("Total cost = " + gst);
 
         /*
         Q5: will it give error?
@@ -25,7 +27,6 @@ public class Q3 {
             NamesofvariablesarecalledidentifiersinJava. Identifierrulesays, identifierscanstartwith
             any alphabet or underscore (“_”) or dollar (“$”).
             According to the rule the given variable name is a valid identifier.
-        */
-
+         */
     }
 }
