@@ -13,6 +13,8 @@ public class Triangle_01_Pattern {
     }
     public static void main(String[] args) {
         zero_one_triangle(5);
+
     }
     
 }
+

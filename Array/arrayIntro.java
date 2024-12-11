@@ -7,6 +7,7 @@ public class arrayIntro {
         String fruits[] = {"aple", "mango", "orange"};
         System.out.println(fruits[1]);
 
+
     }
     
 }
