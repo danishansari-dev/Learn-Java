@@ -1,10 +1,9 @@
 public class BinarySearch {
 
-    publoic static int BinarySearch(int n) {
-
+    public static int BinarySearch(int n) {
+        return -1;
     } 
 
     public static void main(String[] args) {
-        
     }
 }
