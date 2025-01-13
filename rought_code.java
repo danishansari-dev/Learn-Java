@@ -24,10 +24,20 @@ public class rought_code {
         }
         System.out.println("Smallest value is "+ smallest);
         return largest;
-
     }
+
+    public static int maxNum(int arr[]) {
+        int ans = 0;
+        for(int i=0; i<arr.length; i++) {
+            if(arr[i]>ans){
+                ans = arr[i];
+            }
+        }
+        return ans;
+    }
+
     public static void main(String[] args) {
-        int arr[] = { 2,3,4,5,6,6,8,3,9,10};
+        int arr[] = { 2,3,4,5,6,6,8,3,9,10,19,12};
         int key = 9;
 
         System.out.println("largest value is: " + largestNum(arr, key));
@@ -38,5 +48,8 @@ public class rought_code {
         } else {
             System.out.println("Key is at index: " + index);
         }
+
+        System.out.println("Max num is: " + maxNum(arr));
+
     }
 }
