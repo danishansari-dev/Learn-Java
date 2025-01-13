@@ -25,7 +25,8 @@ public class arrayIntro {
 
         // Output
         for(int i=0; i<size; i++) {
-            System.out.println(arr[i]);
+            System.out.print(arr[i]);
+            System.out.print(" ");
         }
 
     }
