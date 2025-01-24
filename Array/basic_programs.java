@@ -1,4 +1,5 @@
 import java.util.Arrays;
+import java.util.Scanner;
 
 public class basic_programs {
     public static int countOccurance(int arr[], int x) {
@@ -58,6 +59,7 @@ public class basic_programs {
     }
 
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
         int arr[] = {1, 2, 3, 4, 5, 5};
         int x = 3;
 
