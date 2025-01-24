@@ -55,12 +55,12 @@ public class basic_programs {
         Arrays.sort(arr);
     }
     
-    public static int[] smallestAndLargestElement(int[] arr) {
+    public static int[] smallestAndLargestElement(int arr[]) {
         // Sorting the array
         Arrays.sort(arr);
         
         // Getting the smallest and largest elements
-        int[] ans = {arr[0], arr[arr.length - 1]};
+        int ans[] = {arr[0], arr[arr.length - 1]};
         return ans;
     }
 
@@ -83,9 +83,9 @@ public class basic_programs {
         System.out.println("Strictly Greater than then value " +x+ " is " +lastOccurance(arr, x));
         System.out.println("is shorted? " + isShorted(arr));
         sort(arr);
-        
-        System.out.println("Smalest: " + smallestAndLargestElement(arr[0]));
-        System.out.println("Largest: " + smallestAndLargestElement(arr[1]));
+        int ans[] = smallestAndLargestElement(arr);
+        System.out.println("Smalest: " + ans[0]);
+        System.out.println("Largest: " + ans[1]);
     }
 
 }
