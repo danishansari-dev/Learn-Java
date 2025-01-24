@@ -1,9 +1,13 @@
-publie class test.java {
+public class test {
+
     public static int products(int a, int b) {
-        int product = a*b;
-        return product;
-    }
+    int product = a*b;
+    
+    return product;
+    }    
     public static void main(String[] args) {
-        System.out.println(products92,3);
+    System.out.println(products(3,2));
+
     }
+
 }
