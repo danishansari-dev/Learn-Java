@@ -46,6 +46,28 @@ public class arrayManipulation {
         return unique;
     }
 
+    public static int max(int arr[]) {
+        int mx = Integer.MIN_VALUE;
+        for(int i=0; i<arr.length; i++) {
+            if(arr[i] > mx) {
+                mx = arr[i];
+            }
+        }
+        return mx;
+    }
+
+    public static int SecondMax(int arr[]) {
+        int mx = max(arr);
+
+        for(int i=0; i<arr.length; i++) {
+            if(arr[i] == mx) {
+                arr[i] = Integer.MIN_VALUE;
+            }
+        }
+        int secMax = max(arr);
+        return secMax;
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter size of array: ");
@@ -57,11 +79,12 @@ public class arrayManipulation {
             arr[i] = sc.nextInt();
         }
 
-        System.out.print("Enter target number: ");
-        int target = sc.nextInt();
-        System.out.println("Target sum is = " +targetSum(arr, target));
+        // System.out.print("Enter target number: ");
+        // int target = sc.nextInt();
+        // System.out.println("Target sum is = " +targetSum(arr, target));
         // System.out.println("Triplet sum is = " +tripletSum(arr, target));
         // System.out.println("Unique elements is = " +uniqueElement(arr));
-
+        System.out.println("Max element is = " +max(arr));
+        System.out.println("secMax element is = " +SecondMax(arr));
     }
 }
