@@ -27,9 +27,45 @@ public class basicProgramsL17 {
         System.out.println("b: " +b);
     }
 
-    public static int[] rotateArray(int arr[]) {
-        
+    public static void printArray(int arr[]) {
+        for(int i=0; i<arr.length; i++) {
+            System.out.print(arr[i] + " ");
+        }
+        System.out.println();
     }
+
+    public static int[] reverseArray(int arr[]) {
+        int n = arr.length;
+        int ans[] = new int[n];
+        
+        // int j = 0;
+        // Traverse original array in reverse direction
+        // for(int i=n-1; i>=0; i--) {
+        //     ans[j++] = arr[i];
+        // }
+
+        int i=n-1, j=0;
+        while(i>=0) {
+            ans[j++] = arr[i--];
+        }
+        return ans;
+    }
+
+    public static void swapInArray(int arr[], int i, int j) {
+        int temp = arr[i];
+        arr[i] = arr[j];
+        arr[j] = temp;
+    }
+    
+    public static void reverseArray2(int arr[]) {
+        int i =0, j=arr.length-1;
+        while(i<j) {
+        swapInArray(arr, i, j);
+        i++;
+        j--;
+        }
+    }
+
 
     public static void main(String[] args) {
         // Scanner sc = new Scanner(System.in);
@@ -42,11 +78,16 @@ public class basicProgramsL17 {
         //     arr[i] = sc.nextInt();
         // }
 
-        int a = 9;
-        int b = 3;
+        // int a = 9;
+        // int b = 3;
         // swap(a, b);
-        swapWithoutTemp(a,b);
+        // swapWithoutTemp(a,b);
+        int arr[] = {1, 2, 3, 4, 5, 6};
+        // int ans[] = reverseArray(arr); // initialize it coz it is returning value
+        // printArray(ans);
 
-        // int arr[] = {1, 2, 3, 4, 5,6};
+        reverseArray2(arr);
+        printArray(arr);
+
     }
 }
