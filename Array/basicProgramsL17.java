@@ -57,14 +57,38 @@ public class basicProgramsL17 {
         arr[j] = temp;
     }
     
-    public static void reverseArray2(int arr[]) {
-        int i =0, j=arr.length-1;
+    public static void reverseArray2(int arr[], int i, int j) {
         while(i<j) {
         swapInArray(arr, i, j);
         i++;
         j--;
         }
     }
+
+    public static void rotateInPlace(int arr[], int k){
+        int n = arr.length;
+        k = k%n;
+        reverseArray2(arr, 0, n-k-1);
+        reverseArray2(arr, n-k, n-1);
+        reverseArray2(arr, 0, n-1);
+    }
+
+    public static int[] rotate(int arr[], int k) {
+        int n = arr.length;
+        k = k%n;
+        int ans[] = new int[n];
+        int j =0;
+
+        for(int i=n-k; i<n; i++) {
+            ans[j++] = arr[i];
+        }
+        for(int i=0; i<n-k; i++) {
+            ans[j++] = arr[i];
+        }
+        return ans;
+    }
+
+
 
 
     public static void main(String[] args) {
@@ -86,7 +110,18 @@ public class basicProgramsL17 {
         // int ans[] = reverseArray(arr); // initialize it coz it is returning value
         // printArray(ans);
 
-        reverseArray2(arr);
+        // reverseArray2(arr);
+        // printArray(arr);
+        
+        // System.out.println("Original Array");
+        // printArray(arr);
+
+        int k = 2;
+        // System.out.println("Array after rotate");
+        // int ans[] = rotate(arr, k);
+        // printArray(ans);
+
+        rotateInPlace(arr, k);
         printArray(arr);
 
     }
