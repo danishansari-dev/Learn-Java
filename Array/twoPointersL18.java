@@ -50,7 +50,7 @@ public static void sortZeroesAndOnes(int arr[]) {
 }
 
 public static void sortEvenOdd(int arr[]) {
-    int left = 0, right = arr.length;
+    int left = 0, right = arr.length-1;
 
     while (left < right) {
         if(arr[left] % 2 == 1 && arr[right] % 2 == 0) {
