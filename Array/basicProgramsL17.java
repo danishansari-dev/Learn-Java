@@ -76,20 +76,13 @@ public class basicProgramsL17 {
         reverseArray2(arr, 0, n-1);
     }
 
-    public static int[] makeFrequencyArray(int arr[]) {
-        int freq[] = new int[100005];
-        for(int i=0; i<arr.length; i++) {
-            freq[arr[i]]++;
-        }
-        return freq;
-    }
-
+    
     public static int[] rotate(int arr[], int k) {
         int n = arr.length;
         k = k%n;
         int ans[] = new int[n];
         int j =0;
-
+        
         for(int i=n-k; i<n; i++) {
             ans[j++] = arr[i];
         }
@@ -98,9 +91,14 @@ public class basicProgramsL17 {
         }
         return ans;
     }
-
-
-
+    
+    public static int[] makeFrequencyArray(int arr[]) {
+        int freq[] = new int[100005];
+        for(int i=0; i<arr.length; i++) {
+            freq[arr[i]]++;
+        }
+        return freq;
+    }
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
@@ -138,6 +136,17 @@ public class basicProgramsL17 {
         int freq[] = makeFrequencyArray(arr);
 
         System.out.print("Enter number of queries ");
-        int q = Scanner
+        int q = sc.nextInt();
+
+        while(q>0) {
+            System.out.print("Enter number to be searched ");
+            int x = sc.nextInt();
+            if(freq[x] > 0) {
+                System.out.println("YES");
+            } else {
+                System.out.println("NO");
+            }
+            q--;
+        }
     }
 }
