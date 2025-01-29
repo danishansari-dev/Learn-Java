@@ -1,3 +1,6 @@
+
+import java.util.Scanner;
+
 public class basicProgramsL17 {
 
     public static void swap(int a, int b) {
@@ -73,6 +76,14 @@ public class basicProgramsL17 {
         reverseArray2(arr, 0, n-1);
     }
 
+    public static int[] makeFrequencyArray(int arr[]) {
+        int freq[] = new int[100005];
+        for(int i=0; i<arr.length; i++) {
+            freq[arr[i]]++;
+        }
+        return freq;
+    }
+
     public static int[] rotate(int arr[], int k) {
         int n = arr.length;
         k = k%n;
@@ -92,21 +103,21 @@ public class basicProgramsL17 {
 
 
     public static void main(String[] args) {
-        // Scanner sc = new Scanner(System.in);
-        // System.out.print("Enter size of an array: ");
-        // int n = sc.nextInt();
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter size of an array: ");
+        int n = sc.nextInt();
 
-        // int arr[] = new int[n];
-        // System.out.print("Enter " +n+ " elements: ");
-        // for(int i=0; i<arr.length; i++) {
-        //     arr[i] = sc.nextInt();
-        // }
+        int arr[] = new int[n];
+        System.out.print("Enter " +n+ " elements: ");
+        for(int i=0; i<arr.length; i++) {
+            arr[i] = sc.nextInt();
+        }
 
         // int a = 9;
         // int b = 3;
         // swap(a, b);
         // swapWithoutTemp(a,b);
-        int arr[] = {1, 2, 3, 4, 5, 6};
+        // int arr[] = {1, 2, 3, 4, 5, 6};
         // int ans[] = reverseArray(arr); // initialize it coz it is returning value
         // printArray(ans);
 
@@ -116,13 +127,17 @@ public class basicProgramsL17 {
         // System.out.println("Original Array");
         // printArray(arr);
 
-        int k = 2;
+        // int k = 2;
         // System.out.println("Array after rotate");
         // int ans[] = rotate(arr, k);
         // printArray(ans);
 
-        rotateInPlace(arr, k);
-        printArray(arr);
+        // rotateInPlace(arr, k);
+        // printArray(arr);
 
+        int freq[] = makeFrequencyArray(arr);
+
+        System.out.print("Enter number of queries ");
+        int q = Scanner
     }
 }
