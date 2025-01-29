@@ -6,6 +6,14 @@ public class twoPointersL18 {
         }
         System.out.println();
     }
+
+public static void swapInArray(int arr[], int i, int j) {
+    int temp = arr[i];
+    arr[i] = arr[j];
+    arr[j] = temp;
+
+    
+}
     public static void main(String[] args) {
         
     }
