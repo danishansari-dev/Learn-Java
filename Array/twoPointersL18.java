@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class twoPointersL18 {
 
     public static void printArray(int arr[]) {
@@ -15,6 +16,12 @@ public static void swapInArray(int arr[], int i, int j) {
     
 }
     public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Enter size of array");
+        int n = sc.nextInt();
+
+        int arr[] = new int[n];
+        System.out.println("Enter " + n + " elements");
         
     }
     
