@@ -78,6 +78,7 @@ public static void sortEvenOdd(int arr[]) {
             arr[i] = sc.nextInt();
         }
 
+        
         // sortZeroesAndOnes(arr);
         sortEvenOdd(arr);
         printArray(arr);
