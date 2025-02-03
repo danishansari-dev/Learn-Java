@@ -29,6 +29,15 @@ public class twoPointersL18 {
 //         }
 //     }
 // }
+    public static void reverse(int arr[]) {
+        int left = 0, right = arr.length-1;
+        while(left < right) {
+            swapInArray(arr, right, left);
+            left++;
+            right--;
+        }
+    }
+
     public static void sortZeroesAndOnes(int arr[]) {
         int left = 0, right = arr.length - 1;
 
@@ -95,8 +104,10 @@ public class twoPointersL18 {
         }
 
         // sortZeroesAndOnes(arr);
-        sortEvenOdd(arr);
-        printArray(arr);
+        int result[] = sortSquares(arr);
+        reverse(result);        
+        printArray(result);
+        
 
     }
 }
