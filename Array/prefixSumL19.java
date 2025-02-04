@@ -30,7 +30,7 @@ public class prefixSumL19 {
         int arr[] = new int[n+1];
 
         System.out.print("Enter " +n+ " elements: ");
-        for(int i=1; i<n; i++) {
+        for(int i=1; i<=n; i++) {
             arr[i] = sc.nextInt();
         }
         // int ans[] = prefixSum(arr);
@@ -38,11 +38,11 @@ public class prefixSumL19 {
 
         int prefSum[] = prefixSum(arr);
 
-        System.out.println("Enter number of queries: ");
+        System.out.print("Enter number of queries: ");
         int q = sc.nextInt();
 
-        System.out.println("Enter range: ");
         while(q-- > 0) {
+            System.out.print("Enter range: ");
             int l = sc.nextInt();
             int r = sc.nextInt();
 
