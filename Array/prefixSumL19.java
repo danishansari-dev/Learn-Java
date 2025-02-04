@@ -7,7 +7,6 @@ public class prefixSumL19 {
         }
         System.out.println();
     }
-
     public static int[] prefixSum(int arr[]) {
         int n = arr.length;
         // int pref[] = new int[n];
@@ -20,20 +19,36 @@ public class prefixSumL19 {
         // return pref;
         return arr;
     }
+
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter size of array: ");
         int n = sc.nextInt();
 
-        int arr[] = new int[n];
-        System.out.print("Enter "+n+ " elements: ");
-        for(int i=0; i<n; i++) {
+        // int arr[] = new int[n];
+        int arr[] = new int[n+1];
+
+        System.out.print("Enter " +n+ " elements: ");
+        for(int i=1; i<n; i++) {
             arr[i] = sc.nextInt();
         }
+        // int ans[] = prefixSum(arr);
+        // printArray(ans);
 
-        int ans[] = prefixSum(arr);
-        printArray(ans);
+        int prefSum[] = prefixSum(arr);
+
+        System.out.println("Enter number of queries: ");
+        int q = sc.nextInt();
+
+        System.out.println("Enter range: ");
+        while(q-- > 0) {
+            int l = sc.nextInt();
+            int r = sc.nextInt();
+
+            int ans = prefSum[r] - prefSum[l-1];
+            System.out.println("Sum: " + ans);
+        }
     }
 }
 
