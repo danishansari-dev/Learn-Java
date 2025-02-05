@@ -21,6 +21,16 @@ public class Q2_findTranspose {
         return transp;
     }
 
+    public static void transposeInPlace(int matrix[][], int r, int c) {
+        for(int i=0; i<c; i++) {
+            for(int j=i; j<r; j++) {
+                int temp = matrix[i][j];
+                matrix[i][j] = matrix[j][i];
+                matrix[j][i] = temp;
+            }
+        }
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
@@ -35,11 +45,12 @@ public class Q2_findTranspose {
                 matrix[i][j] = sc.nextInt();
             }
         }
-        System.out.println("Matrix:");
+        System.out.println("Input Matrix:");
         printMatrix(matrix);
 
-        int ans[][] = findTranspose(matrix, r, c);
+        // int ans[][] = findTranspose(matrix, r, c);
+        transposeInPlace(matrix, r, c);
         System.out.println("Transpose:");
-        printMatrix(ans);
+        printMatrix(matrix);
     }
 }
