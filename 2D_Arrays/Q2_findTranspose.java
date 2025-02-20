@@ -9,7 +9,6 @@ public class Q2_findTranspose {
             System.out.println();
         }
     }
-
     public static int[][] findTranspose(int matrix[][], int r, int c) {
         int transp[][] = new int[c][r];
 
@@ -20,7 +19,6 @@ public class Q2_findTranspose {
         }
         return transp;
     }
-
     public static void transposeInPlace(int matrix[][], int r, int c) {
         for(int i=0; i<c; i++) {
             for(int j=i; j<r; j++) {
@@ -30,7 +28,6 @@ public class Q2_findTranspose {
             }
         }
     }
-
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
