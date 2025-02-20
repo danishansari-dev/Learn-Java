@@ -9,6 +9,7 @@ public class Q3_RotateMatrix {
             System.out.println();
         }
     }
+    
 
     public static void transposeInPlace(int matrix[][], int r, int c) {
         for(int i=0; i<c; i++) {
