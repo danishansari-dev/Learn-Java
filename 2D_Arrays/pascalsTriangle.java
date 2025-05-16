@@ -28,6 +28,7 @@ public class pascalsTriangle {
 
         Scanner sc = new Scanner(System.in);
         System.out.println("Enter n: ");
+        
         int n = sc.nextInt();
         sc.close();
         int  ans[][] = pascall(n);
