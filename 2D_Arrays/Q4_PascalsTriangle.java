@@ -10,8 +10,6 @@ public class Q4_PascalsTriangle {
         }
     }
 
-
-
     public static int[][] pascal(int n){
         int [][] ans = new int[n][];
 
@@ -25,7 +23,6 @@ public class Q4_PascalsTriangle {
             ans[i][j] = ans[i-1][j] + ans[i-1][j-1];
         }
     }
-
         return ans;
     }
 
