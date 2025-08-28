@@ -7,3 +7,4 @@ remaineder -> num % 2
 
 **Select next occurrence**: `Ctrl + D
 **Select all occurrences**: `Ctrl + Shift + L`
+duplicate line : 

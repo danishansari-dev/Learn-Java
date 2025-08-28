@@ -29,6 +29,7 @@ public class twoPointersL18 {
 //         }
 //     }
 // }
+
     public static void reverse(int arr[]) {
         int left = 0, right = arr.length-1;
         while(left < right) {
